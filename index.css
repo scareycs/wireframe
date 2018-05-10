@@ -1,48 +1,103 @@
+* {
+  box-sizing: border-box;
+
+}
+
 body{
-	margin: 0px;
+  text-align: center;
+  padding:0px;
+  margin: 0px;
 }
 
-header{
-	height: 60px;
-	color: white;
-	margin: 0px;
+main {
+  margin-top:180px;
+  padding-top: 100px; 
 }
 
-h1{
-	margin: 0px;
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color:black;
+  background: black;
+  height: 250px;
+  z-index: 2;
+  text-align: center;
 }
 
-.title{
-	height: 60px;
-	background: #530F2F;
+.logo {
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:15px;
+  height: 150px;
+  width: 150px;
+  background: white;
 }
 
-#projects{
-	background: #B52165;
-	width: 180px;
-	margin: 0px;
+nav ul{
+  background: lightgray;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-top:40px;
+  padding-left:0%;
+  padding-right:10px;
+  padding-bottom:14px;
+  right: 0px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-#bio{
-	background: #B92267;
-	width: 180px;
-	margin: 0px;
+nav ul li {
+  height:100%;
+  display: inline-block;
+  margin: 0px;
+  padding: 2%;
+}
+section {
+  padding-top: 40px;
+  margin: 0px;
+  min-height: 400px;
 }
 
-#contact{
-	background: #D32676;
-	width: 180px;
-	margin: 0px;
+section:nth-child(2n+1) {
+  background: gray;
 }
 
-ul{
-	position: fixed;
-    right: 0;
-    top: 0;
-    height: 20px;
-    margin: 0;
-}
-nav ul li{
-	height: 60px;
-	display: inline-block;
+@media only screen and (min-width: 960px) {
+  nav ul{
+    background: lightgray;
+    width: 380px;
+    height: 18px;
+    position: fixed;
+    right: 20px;
+    margin-left: 50%;
+    margin-right: 20px;
+    text-align: right;
+    margin-top: -80px;
+    padding-bottom: 30px;
+  }
+
+  nav ul li {
+    padding: 0px;
+  }
+
+  .logo {
+    margin:10px;
+    padding:15px;
+    height: 150px;
+    width: 150px;
+    background: white;
+  }
+
+  main {
+    margin-top: 120px;
+    padding-top: 50px; 
+  }
+  nav {
+    height: 180px;
+  }
 }
